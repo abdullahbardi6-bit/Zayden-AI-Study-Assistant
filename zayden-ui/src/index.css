@@ -1,0 +1,38 @@
+/* ── Reset & full-height foundation ─────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;          /* prevents white overflow bleed */
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #050505;
+}
+
+/* #root must also be 100% height so App's 100vh container has a real parent */
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ── Blink cursor (used in terminal) ─────────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 4px; }
+::-webkit-scrollbar-track  { background: #050505; }
+::-webkit-scrollbar-thumb  { background: #00ffcc40; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #00ffcc; }

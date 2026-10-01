@@ -1,0 +1,15 @@
+=== GET /api/health ===
+Status: 200
+Body:   {"status":"online","service":"zayden-protocol"}
+
+=== POST /api/terminal/command (generate a react button) ===
+Status: 200
+Body:   {"id":"9148eec4-6686-482b-947a-9f11eb8a95f8","command":"generate a react button","output":"Initiating code synthesis for: 'a react button'\nLanguage detected: TSX\nCompiling abstract syntax treeâ?¦\n\n```tsx\n// Auto-generated: a react button\nexport function GeneratedComponent() {\n  return <div style={{ color: '#00ffcc' }}>[ ZAYDEN GENERATED ]</div>;\n}\n```\n\nSynthesis complete. Review before deployment.","status":"ok","timestamp":"2026-09-30T16:58:53.297026+00:00","latency_ms":811}
+
+=== POST /api/terminal/command (empty) ===
+Status: 422
+Expected 422: PASS
+
+=== OPTIONS preflight ===
+Status: 200
+access-control-allow-origin: http://localhost:5173
